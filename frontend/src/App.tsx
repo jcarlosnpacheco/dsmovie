@@ -1,4 +1,4 @@
-import Navbar from 'components/navbar';
+import Navbar from 'components/Navbar';
 import Form from 'pages/Form/Index';
 import Listing from 'pages/Listing/Index';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
