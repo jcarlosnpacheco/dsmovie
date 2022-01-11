@@ -1,10 +1,8 @@
+import Navbar from 'components/navbar';
 import React from 'react';
 
-
 function App() {
-  return (
-    <h1>Página principal.</h1>
-  );
+  return <Navbar />;
 }
 
 export default App;
