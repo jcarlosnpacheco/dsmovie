@@ -1,6 +1,6 @@
 import './style.css';
 
-import MovieStar from 'components/MovieStar';
+import MovieStar from '../../components/MovieStar';
 
 function MovieScore() {
   const score = 3.5;
