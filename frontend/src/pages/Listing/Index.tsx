@@ -1,13 +1,20 @@
 import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 import MovieCard from '../../components/MovieCard';
 import Pagination from '../../components/Pagination';
 import { BASE_URL } from '../../utils/requests';
 
 function Listing() {
-  axios.get(`${BASE_URL}/movies?size=12&page=0`).then((response) => {
-    console.log(response.data);
-  });
+  //controla o ciclo de vida/estado da aplicação
+  const [pageNumber, setPageNumber] = useState(0);
+
+  //garante que somente será executado uma vez essa requisição abaixo
+  useEffect(() => {
+    axios.get(`${BASE_URL}/movies?size=12&page=0`).then((response) => {
+      console.log(response.data);
+    });
+  }, []);
 
   return (
     <>
